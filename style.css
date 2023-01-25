@@ -1,0 +1,10 @@
+input:invalid{
+    background-color: bisque    ;
+}
+input:valid{
+    background-image: url(green_check.png);
+    background-size: 10%;
+    background-position: right top;
+    background-repeat:no-repeat;
+
+}

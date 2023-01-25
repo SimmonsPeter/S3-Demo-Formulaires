@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <title>Formulaire</title>
   <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Formulaire d'inscription</h1>
   <form method="post" action="connecte.html">
     <label>Nom <input name="nom" type="text" required/></label><br/>
     <label>Prénom <input name="prenom" type="text" required/></label><br/>
-    <label>Courriel <input name="courriel" type="email" required/></label><br/>
-    <label>Téléphone <input name="tel" type="tel" required /></label><br/>
+    <label>Courriel <input name="courriel" type="email" required placeholder="user@domaine.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/></label><br/>
+    <label>Téléphone <input name="tel" type="tel" required placeholder="819-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/></label><br/>
 
-    <label>Sexe <input type="radio" name="sexe" value="F">Femme</input>
-      <input type="radio" name="sexe" value="H" >Homme</input>
-      <input type="radio" name="sexe" value="A" >Autre</input>   </label><br/>
+    <label>Sexe <input type="radio" name="sexe" value="F">Femme
+      <input type="radio" name="sexe" value="H" >Homme
+      <input type="radio" name="sexe" value="A" >Autre   </label><br/>
 
     <label>Pays <select name="pays">
       <option></option>
